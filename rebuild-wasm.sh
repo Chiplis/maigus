@@ -1,8 +1,18 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+PKG_DIR="$ROOT_DIR/pkg"
+DEMO_PKG_DIR="$ROOT_DIR/web/wasm_demo/pkg"
+
+cd "$ROOT_DIR"
 wasm-pack build --release --target web --features wasm
-mkdir -p /Users/chiplis/maigus/web/wasm_demo/pkg
-cp -f /Users/chiplis/maigus/pkg/maigus.js \
-      /Users/chiplis/maigus/pkg/maigus_bg.wasm \
-      /Users/chiplis/maigus/pkg/maigus.d.ts \
-      /Users/chiplis/maigus/pkg/maigus_bg.wasm.d.ts \
-      /Users/chiplis/maigus/pkg/package.json \
-      /Users/chiplis/maigus/web/wasm_demo/pkg/
+
+mkdir -p "$DEMO_PKG_DIR"
+cp -f \
+  "$PKG_DIR/maigus.js" \
+  "$PKG_DIR/maigus_bg.wasm" \
+  "$PKG_DIR/maigus.d.ts" \
+  "$PKG_DIR/maigus_bg.wasm.d.ts" \
+  "$PKG_DIR/package.json" \
+  "$DEMO_PKG_DIR/"
