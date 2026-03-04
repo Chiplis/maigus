@@ -40,15 +40,15 @@ function buildModuleCandidates() {
 
   return [
     `${window.location.origin}${baseDir}pkg/maigus.js`,
-    `${window.location.origin}${baseDir}pkg/maishik.js`,
+    `${window.location.origin}${baseDir}pkg/maigus.js`,
     `${window.location.origin}${baseDir}pkg/pkg/maigus.js`,
-    `${window.location.origin}${baseDir}pkg/pkg/maishik.js`,
+    `${window.location.origin}${baseDir}pkg/pkg/maigus.js`,
     "./pkg/maigus.js",
-    "./pkg/maishik.js",
+    "./pkg/maigus.js",
     "./pkg/pkg/maigus.js",
-    "./pkg/pkg/maishik.js",
+    "./pkg/pkg/maigus.js",
     "../../pkg/maigus.js",
-    "../../pkg/maishik.js",
+    "../../pkg/maigus.js",
   ];
 }
 
