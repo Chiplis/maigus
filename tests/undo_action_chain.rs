@@ -1,3 +1,5 @@
+#![cfg(all(feature = "wasm", target_arch = "wasm32"))]
+
 use maigus::WasmGame;
 use serde_json::Value;
 
