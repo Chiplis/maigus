@@ -1,0 +1,16 @@
+[package]
+name = "maigus-cli"
+version = "0.1.0"
+edition = "2024"
+autobins = false
+
+[dependencies]
+maigus = { path = "../.." }
+rand = "0.9.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[[bin]]
+name = "maigus"
+path = "../../src/main.rs"
+test = false
