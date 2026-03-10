@@ -193,6 +193,25 @@ dependencies = [
 ]
 
 [[package]]
+name = "maigus-cli"
+version = "0.1.0"
+dependencies = [
+ "maigus",
+ "rand 0.9.2",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "maigus-tools"
+version = "0.1.0"
+dependencies = [
+ "maigus",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
 name = "memchr"
 version = "2.7.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
